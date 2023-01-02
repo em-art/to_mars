@@ -1,3 +1,65 @@
+@-webkit-keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translate(-10rem);
+  }
+  80% {
+    transform: translate(0.2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translate(-10rem);
+  }
+  80% {
+    transform: translate(0.2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@-webkit-keyframes rigtToLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes rigtToLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes btnToUp {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes btnToUp {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 *, ::after, ::before {
   margin: 0;
   padding: 0;
@@ -9,11 +71,6 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  color: #777;
-  font-size: 1.6rem;
-  letter-spacing: 0.2rem;
   padding: 5rem;
   background-color: #2d303b;
 }
@@ -22,24 +79,12 @@ body {
   background-color: #2d303b;
 }
 
-.header {
-  position: relative;
-  height: 95vh;
-  background: linear-gradient(90deg, rgba(99, 40, 17, 0.2039215686) 0.01%, rgba(1, 1, 1, 0.2) 99.5%), url(../img/mars_planet.jpg) center/cover no-repeat;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
-}
-.header__logo {
-  position: absolute;
-  left: 2.5rem;
-  top: 2.5rem;
-  height: 5rem;
-}
-.header__box {
-  position: absolute;
-  top: 33%;
-  left: 10%;
-  transform: translate(50% -50%);
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #2d303b;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
 }
 
 .title-first {
@@ -79,7 +124,7 @@ body {
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   padding: 1.5rem 4rem;
   background: #f25830;
   border-radius: 5rem;
@@ -118,66 +163,22 @@ body {
           animation-fill-mode: backwards;
 }
 
-@-webkit-keyframes leftToRight {
-  0% {
-    opacity: 0;
-    transform: translate(-10rem);
-  }
-  80% {
-    transform: translate(0.2rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0px);
-  }
+.header {
+  position: relative;
+  height: 95vh;
+  background: linear-gradient(90deg, rgba(99, 40, 17, 0.2039215686), 0.01%, rgba(99, 40, 17, 0.2) 99.5%), url(../img/mars_planet.jpg) center/cover no-repeat;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
 }
-
-@keyframes leftToRight {
-  0% {
-    opacity: 0;
-    transform: translate(-10rem);
-  }
-  80% {
-    transform: translate(0.2rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0px);
-  }
+.header__logo {
+  position: absolute;
+  left: 2.5rem;
+  top: 2.5rem;
+  height: 5rem;
 }
-@-webkit-keyframes rigtToLeft {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes rigtToLeft {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes btnToUp {
-  0% {
-    opacity: 0;
-    transform: translateY(5rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-@keyframes btnToUp {
-  0% {
-    opacity: 0;
-    transform: translateY(5rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
+.header__box {
+  position: absolute;
+  top: 33%;
+  left: 10%;
+  transform: translate(50% -50%);
 }/*# sourceMappingURL=style.css.map */
